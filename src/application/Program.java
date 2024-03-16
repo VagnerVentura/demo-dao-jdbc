@@ -15,9 +15,10 @@ public class Program {
 		System.out.println(obj);
 		
 //		Seller seller = new Seller(10,"Vagner","vagnerventura@hotmail.com",new Date(),200.00);
-		
-		
+				
 		SellerDao sellerDao = DaoFactory.createSellerDao();
+		
+		System.out.println("=== Test 1: seller findById ===");
 		
 		Seller seller = sellerDao.findById(3);
 		
